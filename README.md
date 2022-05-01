@@ -58,7 +58,7 @@ Muitos designers de eLearning assumem que a acessibilidade do teclado limitará 
 
 Forneça aos usuários tempo suficiente para ler e usar o conteúdo.
 
-![image](\pictures\Imagem8.png)
+![image](pictures\imagem8.png)
 
 Vídeo decorativo com botão de parada
 
