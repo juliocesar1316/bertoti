@@ -6,7 +6,7 @@ Forneça alternativas de texto para qualquer conteúdo não textual para que pos
 
 Adicione texto alternativo a qualquer imagem que contenha informações complexas. O texto alternativo precisa explicar os postos-chave que você deseja que o aluno entenda usando a imagem, gráfico, mapa ou diagrama etc. Se sua ferramenta de autoria tiver um limite de caracteres para texto alternativo, por exemplo, Leitora, você pode adicionar o texto alternativo a uma caixa de texto na página e ocultá-lo dos alunos com visão. Alternativamente, você pode adicionar a descrição em outra página e, em seguida, adicionar um gatilho que vincule a esta página.
 
-![image](./pictures/imagem1.png)
+![image](./pictures/Imagem1.png)
 
 ### 1.2. Mídia baseada em tempo (Legendas (Pré-gravadas) - Nível A)
 
@@ -58,7 +58,7 @@ Muitos designers de eLearning assumem que a acessibilidade do teclado limitará 
 
 Forneça aos usuários tempo suficiente para ler e usar o conteúdo.
 
-![image](./pictures/imagem8.png)
+![image](./pictures/Imagem8.png)
 
 Vídeo decorativo com botão de parada
 
