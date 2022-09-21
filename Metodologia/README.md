@@ -90,7 +90,7 @@ Link do repositório do projeto: https://github.com/juliocesar1316/JetSoft
 ### Aprendizados Efetivos HS
 
 
-# Projeto 3: 2º semestre de 2020
+# Projeto 3: 1º semestre de 2022
 
 
 ## Parceiro Acadêmico
