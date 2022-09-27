@@ -8,9 +8,9 @@
 
 ## Introdução
 
-Olá, seja bem-vindo. Sou o José Danrley, estudante de Análise e Desenvolvimento de Sistemas pela FATEC Prof. Jessen Vidal. 
+Olá, seja bem-vindo. Sou o Julio Cesar, estudante de Banco de Dados pela FATEC Prof. Jessen Vidal. 
 
-Tenho 24 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
+Tenho 25 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
 
 
 ### Meus principais conhecimentos
@@ -20,109 +20,107 @@ Tenho 24 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
 
 #### React
 
-
-#### Projetos Integradores durante a graduação 
-
-# Projeto 1: 1º Semestre de 2021
+#### SQL
 
 
-### Parceiro Acadêmico
-Fatec Prof. Jessen Vidal (proposta realizada pelo docente responsável pela disciplina que ordenou o projeto)
+### Projetos Integradores durante a graduação 
+<details >
+  <summary>Projeto 1: 1º Semestre de 2021</summary>
+  
+  # Projeto 1: 1º Semestre de 2021
+
+  ### Parceiro Acadêmico
+  Fatec Prof. Jessen Vidal (proposta realizada pelo docente responsável pela disciplina que ordenou o projeto)
 
 
-### Visão do Projeto
-A proposta do projeto foi a elaboração de um website institucional visando a melhoria da visibilidade do centro de convivência infantil vó Maria Felix para o público de modo geral, onde o usuário poderá facilmente ter o acesso a informação sobre a ong como: sua criação, história, funcionamento e os projetos em andamento.
+  ### Visão do Projeto
+  A proposta do projeto foi a elaboração de um website institucional visando a melhoria da visibilidade do centro de convivência infantil vó Maria Felix para o público de modo geral, onde o usuário poderá facilmente ter o acesso a informação sobre a ong como: sua criação, história, funcionamento e os projetos em andamento.
 
-os interessados em ajudar na causa poderão fazer inscrição para ser voluntariado, doações, projetos / parcerias e podem ajudar compartilhando a ong através do site.
+  os interessados em ajudar na causa poderão fazer inscrição para ser voluntariado, doações, projetos / parcerias e podem ajudar compartilhando a ong através do site.
 
-Link do repositório do projeto: https://github.com/juliocesar1316/Projeto-Site-Intitucional
+  Link do repositório do projeto: https://github.com/juliocesar1316/Projeto-Site-Intitucional
 
+  ### Tecnologias adotadas na solução
 
+  #### HTML e CSS
+  #### Javascript
+  #### MySQL
+  #### PHP
 
-### Tecnologias adotadas na solução
+  ### Contribuições pessoais
+  -modelagem do design do site na plataforma marvel
+  -html e css junto com php
+  -banco de dados
 
-#### HTML e CSS
-#### Javascript
-#### MySQL
-#### PHP
+  ### Aprendizados Efetivos HS
 
-### Contribuições pessoais
--modelagem do design do site na plataforma marvel
--html e css junto com php
--banco de dados
+</details>
 
+<details>
+  <summary>Projeto 2: 2º semestre de 2021</summary>
 
-### Aprendizados Efetivos HS
+  # Projeto 2: 2º semestre de 2021
 
+  ### Parceiro Acadêmico
+  JetSoft <br/>
 
-# Projeto 2: 2º semestre de 2021
+  <img src="https://pqtec.org.br/wpfiles/wp-content/uploads/2020/12/45e3ff8fb90b6638ab8b.jpg" alt="JetSoft" /><br/>
+  ##### *Figura 01. JetSoft*
 
+  ### Visão do Projeto
 
-### Parceiro Acadêmico
-JetSoft <br/>
+  O projeto foi elaborado para produzir um website para uma empresa de softwares que terceiriza serviços, onde ela terá a funcionalidade de emitir relatórios mensais apresentando o quadro de presença de colaboradores em posto de trabalhos acordados em contrato que passarão por um nível de aprovação. 
 
-<img src="https://pqtec.org.br/wpfiles/wp-content/uploads/2020/12/45e3ff8fb90b6638ab8b.jpg" alt="JetSoft" /><br/>
-##### *Figura 01. JetSoft*
+  Devido ao problema de falta de colaboradores se a empresa tiver acima de 20% de postos de trabalho em abertos, o mesmo paga multa de 35% do valor total do contrato e para que isso seja evitado outra funcionalidade do projeto e o quadro de colaboradores que possuirá alocações fixas e flutuantes parra caso ocorra eventos (férias, falta não justificada, licença diversas, demissão, entre outros). 
 
-### Visão do Projeto
+  Link do repositório do projeto: https://github.com/juliocesar1316/JetSoft
 
-O projeto foi elaborado para produzir um website para uma empresa de softwares que terceiriza serviços, onde ela terá a funcionalidade de emitir relatórios mensais apresentando o quadro de presença de colaboradores em posto de trabalhos acordados em contrato que passarão por um nível de aprovação. 
+  ### Tecnologias adotadas na solução
 
-Devido ao problema de falta de colaboradores se a empresa tiver acima de 20% de postos de trabalho em abertos, o mesmo paga multa de 35% do valor total do contrato e para que isso seja evitado outra funcionalidade do projeto e o quadro de colaboradores que possuirá alocações fixas e flutuantes parra caso ocorra eventos (férias, falta não justificada, licença diversas, demissão, entre outros). 
+  #### Flask
+  #### HTML, CSS e JavaScript
+  #### MySQL
 
-Link do repositório do projeto: https://github.com/juliocesar1316/JetSoft
+  ### Contribuições pessoais
+  -master
+  -html, css e javascript
+  -flask
 
-### Tecnologias adotadas na solução
+  ### Aprendizados Efetivos HS
 
-#### Flask
+</details>
 
-#### HTML, CSS e JavaScript
+<details>
+  <summary>Projeto 3: 1º semestre de 2022</summary>
 
-#### MySQL
+  # Projeto 3: 1º semestre de 2022
 
-### Contribuições pessoais
+  ## Parceiro Acadêmico
+  tecsus <br/>
+  ![image](https://media-exp1.licdn.com/dms/image/C560BAQHXLirwDSFr8w/company-logo_200_200/0/1601400075343?e=1671667200&v=beta&t=YrZM8vA81NGXAkaDahqHBGJqxY0gAzFTM6xDqingDkM)
+  ##### *Figura 02. tecsus*
 
--master
--html, css e javascript
--flask
+  ### Visão do Projeto
 
+  O projeto foi elaborado para produzir um software de gerenciamento de contas para uma startup que busca por meio da tecnologia tornar o planeta mais sustentável.
+  O sistema será desenvolvido para que o processo de cadastramento de contas, unidade, concessionarias e contratos possa ser simples e intuitivo, além de proporcionar ao usuário uma experiência mais dinâmica ao exibir as informações relevantes através de relatórios e gráficos descomplicados para analise
 
-### Aprendizados Efetivos HS
+  Link do repositório do projeto: https://github.com/juliocesar1316/TecSus
 
+  ### Tecnologias adotadas na solução
 
-# Projeto 3: 1º semestre de 2022
+  #### React
+  #### Spring - java
+  #### MySQL
 
+  ### Contribuições pessoais
+  -fui po
+  -montagem do protitpo do site
+  -react
 
-## Parceiro Acadêmico
-tecsus <br/>
-![image](https://media-exp1.licdn.com/dms/image/C560BAQHXLirwDSFr8w/company-logo_200_200/0/1601400075343?e=1671667200&v=beta&t=YrZM8vA81NGXAkaDahqHBGJqxY0gAzFTM6xDqingDkM)
-##### *Figura 02. tecsus*
+  ### Aprendizados Efetivos HS
 
-
-### Visão do Projeto
-
-O projeto foi elaborado para produzir um software de gerenciamento de contas para uma startup que busca por meio da tecnologia tornar o planeta mais sustentável.
-O sistema será desenvolvido para que o processo de cadastramento de contas, unidade, concessionarias e contratos possa ser simples e intuitivo, além de proporcionar ao usuário uma experiência mais dinâmica ao exibir as informações relevantes através de relatórios e gráficos descomplicados para analise
-
-Link do repositório do projeto: https://github.com/juliocesar1316/TecSus
-
-### Tecnologias adotadas na solução
-
-#### React
-
-#### Spring - java
-
-#### MySQL
-
-
-### Contribuições pessoais
-
--fui po
--montagem do protitpo do site
--react
-
-### Aprendizados Efetivos HS
-
+</details>
 
 ## Contatos:
 
