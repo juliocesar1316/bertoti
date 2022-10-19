@@ -190,6 +190,7 @@ Tenho 25 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
   <br>
   # Figura 05. Tela de conta de agua pt2*
   <br>
+  <br>
   Apos cliente aprovar o mockup e a priorizacao de backlog, podemos começar a organizar os grupos de back-end e front-end. Para este projeto foi utilizado as linguagens React para front-end, Spring Boot para back-end e para o banco de dados foi utilizado o Mysql. As linguagenbs foram utilizadas por serem requisitos e pela preferencia do grupo.
 
   Apesar de esta operando como Product Owner, possuo algumas experiencias com React e como meu grupo não tinha pessoas para o front eu decidi conciliar o PO com o desenvolimento do front-end.
