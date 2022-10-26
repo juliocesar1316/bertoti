@@ -195,9 +195,181 @@ Tenho 25 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
 
   Apesar de esta operando como Product Owner, possuo algumas experiencias com React e como meu grupo não tinha pessoas para o front eu decidi conciliar o PO com o desenvolimento do front-end.
 
-  De começo para auxilkiar na programaçao das telas foi utilizado a biblioteca MaterialUi onde foi utilizado campos de input, botoes e estilos. Como o react trabalha com componetns no nosso prpojeto não foi difernete, para cada parte das paginas foi criado um componente para facilitar na progrmaçao e userStates para que seja feito o controle do estado das variaveis.
+  De começo para auxiliar na programaçao das telas foi utilizado a biblioteca MaterialUi onde foi utilizado campos de input, botoes e estilos. Como o react trabalha com componetns no nosso prpojeto não foi difernete, para cada parte das paginas foi criado um componente para facilitar na progrmaçao e userStates para que seja feito o controle do estado das variaveis.
 
-  {programcao de alguma pagina}
+  ```
+  export default function EditConcessionaria({ dados, modalEdit }) {
+  
+    const classes = useStyles();
+    const [cnpj, setCnpj] = useState(dados.cnpj);
+    const [nome, setNome] = useState(dados.nome);
+    const [segmento, setSegmento] = useState(dados.segmento);
+    const [cep, setCep] = useState(dados.cep);
+    const [rua, setRua] = useState(dados.rua);
+    const [bairro, setBairro] = useState(dados.bairro);
+    const [estado, setEstado] = useState(dados.uf);
+    const [cidade, setCidade] = useState(dados.cidade);
+    const [num_resid, setNum_resid] = useState(dados.numero);
+    const [telefone, setTelefone] = useState(dados.telefone);
+    const [inscricao_est, setInscricao_est] = useState(dados.inscricao_estadual);
+    const [inscricao_unic, setInscricao_unic] = useState(
+      dados.inscricao_especial
+    );
+
+    async function handleUpdate() {
+      const data = {
+        id: dados.id,
+        cnpj: cnpj,
+        nome: nome,
+        segmento: segmento,
+        cep: cep,
+        rua: rua,
+        bairro: bairro,
+        cidade: cidade,
+        uf: estado,
+        numero: num_resid,
+        telefone: telefone,
+        inscricao_estadual: inscricao_est,
+        inscricao_especial: inscricao_unic,
+      };
+      await fetch(`${baseURL}/concessionaria/atualizar`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+    }
+
+    return (
+      <form className={classes.root} onSubmit={handleUpdate}>
+        <div className={classes.campo}>
+          <TextField
+            className={classes.text}
+            required
+            id="outlined-required"
+            label="CNPJ"
+            variant="outlined"
+            fullWidth
+            onChange={(e) => setCnpj(e.target.value)}
+            value={cnpj}
+          />
+    ...
+  ```
+
+  O componente que foi criado acima é um Modal que onde retorna os dados que foram salvos e edita as informacoes. Usando o useState é possivel guardar o o dado salvo e edita-lo como segundo estado da variavel. A funcao handleUpdate é executado após apertar o botao de enviar aonde ele pega todas as alteracões e atualiza os dados. No returno desse componente tem os inputs e as label que serao mostradas nesse modal.
+
+  Esse é um exemplo de um componente de dados que retorna os dados da concessionaria para editar e assim como esse outros foram montados como inserir, editar e excluir dados do app.
+
+  Para ultima sprint foi acordado com o cliente que era para ser inserido uma pagina de relatorio com graficos relacioandos a contas de agua e contas de enerrgia inseridos.
+
+  Para o grafico optei por utilizar a bibloteca recharts para react onde ele consegue gerar um grafico com os dados das contas.
+
+  ```
+  import {
+  AreaChart,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Area,
+} from "recharts";
+import FormControl from "@material-ui/core/FormControl";
+import RadioGroup from "@material-ui/core/RadioGroup";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import { useState } from "react";
+import Radio from "@material-ui/core/Radio";
+import "./style.css";
+
+function GraficoAgua({ listaRelatorioAguas }) {
+  const [variavelY, setVariavelY] = useState();
+  const [legenda, setLegenda] = useState();
+  const [checked, setChecked] = useState("Valor Total R$");
+
+  const handleChange = (event) => {
+    setChecked(event.target.value);
+  };
+
+  const dataConsumo = listaRelatorioAguas.map((x) => {
+    const arrayData = x.data_emissao.split("-");
+    const ano = `${arrayData[0]}`;
+    const mes = `${arrayData[1]}`;
+    return {
+      name: `${mes}/${ano}`,
+      uv: x.consumo_m3,
+    };
+  });
+
+  const daTaValorTotal = listaRelatorioAguas.map((x) => {
+    const arrayData = x.data_emissao.split("-");
+    const ano = `${arrayData[0]}`;
+    const mes = `${arrayData[1]}`;
+    return {
+      name: `${mes}/${ano}`,
+      uv: x.valor_total,
+    };
+  });
+
+  return (
+    <div className="main-dados">
+      <div className="Agua">
+        <AreaChart
+          width={900}
+          height={450}
+          data={variavelY ? variavelY : daTaValorTotal}
+          margin={{ top: 30, right: 20, left: 0, bottom: 0 }}
+        >
+          <defs>
+            <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="2">
+              <stop offset="5%" stopColor="#5664D2" stopOpacity={0.8} />
+              <stop offset="95%" stopColor="#5664D2" stopOpacity={0} />
+            </linearGradient>
+          </defs>
+          <XAxis dataKey="name" />
+          <YAxis />
+          <CartesianGrid strokeDasharray="3 3" />
+          <Tooltip />
+          <Area
+            type="monotone"
+            name={legenda ? legenda : "Valor Total (R$)"}
+            dataKey="uv"
+            stroke="#5664D2"
+            fillOpacity={1}
+            fill="url(#colorUv)"
+          />
+        </AreaChart>
+      </div>
+      <div className="buttons">
+        <FormControl component="fieldset">
+          <RadioGroup row value={checked} onChange={handleChange}>
+            <FormControlLabel
+              value="Valor Total R$"
+              control={<Radio />}
+              label="Valor Total R$"
+              onClick={() => {
+                setVariavelY(daTaValorTotal);
+                setLegenda("Valor Total (R$)");
+              }}
+            />
+            <FormControlLabel
+              value="Consumo Mês (M³)"
+              control={<Radio />}
+              label="Consumo Mês (M³)"
+              onClick={() => {
+                setVariavelY(dataConsumo);
+                setLegenda("Consumo Mês (M³)");
+              }}
+            />
+          </RadioGroup>
+        </FormControl>
+      </div>
+    </div>
+  );
+}
+
+export default GraficoAgua;
+  ```
+  
 
 
 
