@@ -103,7 +103,7 @@ Tenho 25 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
   ### Visão do Projeto
 
   O projeto foi elaborado para produzir um software de gerenciamento de contas para uma startup que busca por meio da tecnologia tornar o planeta mais sustentável.
-  O sistema será desenvolvido para que o processo de cadastramento de contas, unidade, concessionarias e contratos possa ser simples e intuitivo, além de proporcionar ao usuário uma experiência mais dinâmica ao exibir as informações relevantes através de relatórios e gráficos descomplicados para analise
+  O sistema será desenvolvido para que o processo de cadastramento de contas, unidade, concessionarias e contratos possa ser simples e intuitivo, além de proporcionar ao usuário uma experiência mais dinâmica ao exibir as informações relevantes através de relatórios e gráficos descomplicados para análise
 
   Link do repositório do projeto: https://github.com/juliocesar1316/TecSus
 
@@ -114,13 +114,10 @@ Tenho 25 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
   #### MySQL
 
   ### Contribuições pessoais
-  -fui po
-  -montagem do protitpo do site
-  -react
 
-  Neste projeto eu estava atuando como Product Owner, onde era responsavel pelo contato com cliente, definição de user storys, priorizacao do backlog e para este projeto eu realizei o design do mockup do aplicativo. 
+  Neste projeto eu estava atuando como Product Owner, onde era responsável pelo contato com cliente, definição de user storys, priorização do backlog e para este projeto eu realizei o design do mockup do aplicativo. 
 
-  Apos o contato com o cliente, foi possivel a definicao dos user storys e do mockup onde foi utilizado a ferramenta figma.
+  Após o contato com o cliente, foi possível a definição dos user storys e do mockup onde foi utilizado a ferramenta figma.
   <div id="table_use_cases" align="center" width="400">
     <table align="justify">
       <tr>
@@ -133,36 +130,36 @@ Tenho 25 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
       <tr>
         <td>1</td>
         <td>Digitador</td>
-        <td>Guardar no sistema os dados das contas de água para analises, relatorios e ter um controle de sistema</td>
-        <td>Criar um cadastro de conta de agua de maneira funcional e pratico </td>
+        <td>Guardar no sistema os dados das contas de água para análises, relatórios e ter um controle de sistema</td>
+        <td>Criar um cadastro de conta de água de maneira funcional e prático </td>
         <td>1</td>
       </tr>
       <tr>
         <td>2</td>
         <td>Digitador</td>
-        <td>Guardar no sistema os dados das contas de energia para analises, relatorios e ter um controle de sistema</td>
-        <td>Criar um cadastro de conta de energia de maneira funcional e pratico </td>
+        <td>Guardar no sistema os dados das contas de energia para análises, relatórios e ter um controle de sistema</td>
+        <td>Criar um cadastro de conta de energia de maneira funcional e prático </td>
         <td>2</td>
       </tr>
       <tr>
         <td>3</td>
         <td>Digitador</td>
-        <td>Guardar no sistema dados de unidades e ou empresas para analises, relatorios e ter um controle de sistema</td>
-        <td>Criar um cadastro de unidades de maneira funcional e pratico </td>
+        <td>Guardar no sistema dados de unidades e ou empresas para análises, relatórios e ter um controle de sistema</td>
+        <td>Criar um cadastro de unidades de maneira funcional e prático </td>
         <td>3</td>
       </tr>
       <tr> 
         <td>4</td>
         <td>Digitador</td>
-        <td>Guardar no sistema dados de concessionaria que faz o fornecimento para tais unidades  para analises, relatorios e ter um controle de sistema</td>
-        <td>Criar um cadastro de concessionarias de maneira funcional e pratico </td>
+        <td>Guardar no sistema dados de concessionaria que faz o fornecimento para tais unidades para análises, relatórios e ter um controle de sistema</td>
+        <td>Criar um cadastro de concessionarias de maneira funcional e prático </td>
         <td>4</td>
       </tr>
       <tr>
         <td>5</td>
         <td>Digitador</td>
-        <td>Cadastrar os contratos acordado com os clientes e unidade com sua respectiva concessionaria do segmento de agua/esgoto</td>
-        <td>Criar um cadastro de contrato para contas de agua/esgoto</td>
+        <td>Cadastrar os contratos acordado com os clientes e unidade com sua respectiva concessionaria do segmento de água/esgoto</td>
+        <td>Criar um cadastro de contrato para contas de água/esgoto</td>
         <td>5</td>
       </tr>
       <tr>
@@ -174,9 +171,9 @@ Tenho 25 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
       </tr>
       <tr>
         <td>23</td>
-        <td>Gestor, Digitador e Adminnistrador</td>
-        <td>Um sistema com bastante atalhos, que fique bem usual para os usuarios e de facil entendimento</td>
-        <td>O sistema deve ser montado com menu lateral esquerdo com as abas de acesso totalmente limpo e de facil acesso e para areas externas do menu vao ser utilizados mais ou menos 100% da tela</td>
+        <td>Gestor, Digitador e Administrador</td>
+        <td>Um sistema com bastante atalhos, que fique bem usual para os usuários e de fácil entendimento</td>
+        <td>O sistema deve ser montado com menu lateral esquerdo com as abas de acesso totalmente limpo e de fácil acesso e para áreas externas do menu vão ser utilizados mais ou menos 100% da tela</td>
         <td>23</td>
       </tr>
     </table>
@@ -191,11 +188,11 @@ Tenho 25 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
   # Figura 05. Tela de conta de agua pt2*
   <br>
   <br>
-  Apos cliente aprovar o mockup e a priorizacao de backlog, podemos começar a organizar os grupos de back-end e front-end. Para este projeto foi utilizado as linguagens React para front-end, Spring Boot para back-end e para o banco de dados foi utilizado o Mysql. As linguagenbs foram utilizadas por serem requisitos e pela preferencia do grupo.
+  Após cliente aprovar o mockup e a priorização de backlog, podemos começar a organizar os grupos de back-end e front-end. Para este projeto foi utilizado as linguagens React para front-end, Spring Boot para back-end e para o banco de dados foi utilizado o Mysql. As linguagens foram utilizadas por serem requisitos e pela preferência do grupo.
 
-  Apesar de esta operando como Product Owner, possuo algumas experiencias com React e como meu grupo não tinha pessoas para o front eu decidi conciliar o PO com o desenvolimento do front-end.
+  Apesar de esta operando como Product Owner, possuo algumas experiencias com React e como meu grupo não tinha pessoas para o front eu decidi conciliar o PO com o desenvolvimento do front-end.
 
-  De começo para auxiliar na programaçao das telas foi utilizado a biblioteca MaterialUi onde foi utilizado campos de input, botoes e estilos. Como o react trabalha com componetns no nosso prpojeto não foi difernete, para cada parte das paginas foi criado um componente para facilitar na progrmaçao e userStates para que seja feito o controle do estado das variaveis.
+  De começo para auxiliar na programação das telas foi utilizado a biblioteca MaterialUi onde foi utilizado campos de input, botões e estilos. Como o react trabalha com componentes no nosso projeto não foi diferente, para cada parte das páginas foi criado um componente para facilitar na programação e userStates para que seja feito o controle do estado das variáveis.
 
   ```
   export default function EditConcessionaria({ dados, modalEdit }) {
@@ -257,13 +254,13 @@ Tenho 25 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
     ...
   ```
 
-  O componente que foi criado acima é um Modal que onde retorna os dados que foram salvos e edita as informacoes. Usando o useState é possivel guardar o o dado salvo e edita-lo como segundo estado da variavel. A funcao handleUpdate é executado após apertar o botao de enviar aonde ele pega todas as alteracões e atualiza os dados. No returno desse componente tem os inputs e as label que serao mostradas nesse modal.
+  O componente que foi criado acima é um Modal que aonde retorna os dados que foram salvos e edita as informações. Usando o useState é possível guardar o dado salvo e editá-lo como segundo estado da variável. A função handleUpdate é executado após apertar o botão de enviar onde ele pega todas as alterações e atualiza os dados. No returno desse componente tem os inputs e as label que serão mostradas nesse modal.
 
   Esse é um exemplo de um componente de dados que retorna os dados da concessionaria para editar e assim como esse outros foram montados como inserir, editar e excluir dados do app.
 
-  Para ultima sprint foi acordado com o cliente que era para ser inserido uma pagina de relatorio com graficos relacioandos a contas de agua e contas de enerrgia inseridos.
+  Para última sprint foi acordado com o cliente que era para ser inserido uma página de relatório com gráficos relacionados a contas de água e contas de energia inseridos.
 
-  Para o grafico optei por utilizar a bibloteca recharts para react onde ele consegue gerar um grafico com os dados das contas.
+  Para o gráfico optei por utilizar a biblioteca recharts para react onde ele consegue gerar um gráfico com os dados das contas.
 
   ```
   import {
@@ -369,13 +366,37 @@ function GraficoAgua({ listaRelatorioAguas }) {
 
 export default GraficoAgua;
   ```
-  
+O código acima monta o gráfico através dos dados recebidos no JSON do back-end e filtra de acordo com os valor total mensal e consumo mensal.
 
+Abaixo um gif de como ficou a montagem desse gráfico e os filtros.
+<img align="center"  src = "midias/relatorios_e_graficos.gif"/>
 
+E com isso é finalizado a api, colocamos o back-end no heroku para facilitar na requisição de dados do front-end e conseguimos entregar um bom projeto, o cliente ficou satisfeito com o resultado.
 
+Porém nesta api eu estava como product owner porém dois integrantes que ficaram na parte do front não acabaram ajudando muito, então acabei que fiquei mais empenhado como desenvolvedor, mas nunca deixando minhas tarefas como product owner de lado. 
 
+#### Hard Skills Efetivamente Desenvolvidas
 
-  ### Aprendizados Efetivos HS
+-Figma<br>
+  Para montagem do mockup do projeto.<br>
+-React <br>
+  Foi utilizado para montagem do front end junto com algumas bibliotecas como recharts e material ui<br>
+-Heroku<br>
+  Utilizado para hospedagem da parte do back-end do projeto<br>
+-MySql<br>
+  Utilizado para guardar os dados dos formulários e dados do front-end<br>
+
+#### Soft Skills Efetivamente Desenvolvidas
+-Comunicação<br>
+  Utilizada para estabelecer os critérios e validação com o cliente e para comunicar com o grupo<br>
+-Escuta Ativa<br>
+  Utilizada para coletar ideais, críticas e soluções para entender e desenvolver melhor o projeto e para melhor experiencia do usuário<br>
+-Trabalho em Equipe<br>
+  Utilizado para a montagem geral do projeto, coleta de ideias e ajudar o grupo nas partes que sentem dificuldade para assim gerar um bom trabalho em um bom tempo.<br>
+-Liderança<br>
+  Utilizado para liderar o grupo da melhor forma possível de acordo com os critérios e gosto do cliente e como desenvolvedor liderar o front-end para que fique adequado e o cliente fique satisfeito <br>
+
+### Aprendizados Efetivos HS
 
 </details>
 
@@ -383,3 +404,4 @@ export default GraficoAgua;
 
 - [LinkedIn;](https://www.linkedin.com/in/juliocesar2811/)
 - [GitHub.](https://github.com/juliocesar1316) 
+
