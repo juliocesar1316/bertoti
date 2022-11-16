@@ -193,7 +193,7 @@ Tenho 25 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
   Apesar de esta operando como Product Owner, possuo algumas experiencias com React e como meu grupo não tinha pessoas para o front eu decidi conciliar o PO com o desenvolvimento do front-end.
 
   De começo para auxiliar na programação das telas foi utilizado a biblioteca MaterialUi onde foi utilizado campos de input, botões e estilos. Como o react trabalha com componentes no nosso projeto não foi diferente, para cada parte das páginas foi criado um componente para facilitar na programação e userStates para que seja feito o controle do estado das variáveis.
-
+  <details>
   ```
   export default function EditConcessionaria({ dados, modalEdit }) {
   
@@ -253,6 +253,7 @@ Tenho 25 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
           />
     ...
   ```
+  </details>
 
   O componente que foi criado acima é um Modal que aonde retorna os dados que foram salvos e edita as informações. Usando o useState é possível guardar o dado salvo e editá-lo como segundo estado da variável. A função handleUpdate é executado após apertar o botão de enviar onde ele pega todas as alterações e atualiza os dados. No returno desse componente tem os inputs e as label que serão mostradas nesse modal.
 
@@ -262,110 +263,112 @@ Tenho 25 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
 
   Para o gráfico optei por utilizar a biblioteca recharts para react onde ele consegue gerar um gráfico com os dados das contas.
 
-  ```
-  import {
-  AreaChart,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Area,
-} from "recharts";
-import FormControl from "@material-ui/core/FormControl";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import { useState } from "react";
-import Radio from "@material-ui/core/Radio";
-import "./style.css";
+  <details>
+    ```
+    import {
+    AreaChart,
+    XAxis,
+    YAxis,
+    CartesianGrid,
+    Tooltip,
+    Area,
+  } from "recharts";
+  import FormControl from "@material-ui/core/FormControl";
+  import RadioGroup from "@material-ui/core/RadioGroup";
+  import FormControlLabel from "@material-ui/core/FormControlLabel";
+  import { useState } from "react";
+  import Radio from "@material-ui/core/Radio";
+  import "./style.css";
 
-function GraficoAgua({ listaRelatorioAguas }) {
-  const [variavelY, setVariavelY] = useState();
-  const [legenda, setLegenda] = useState();
-  const [checked, setChecked] = useState("Valor Total R$");
+  function GraficoAgua({ listaRelatorioAguas }) {
+    const [variavelY, setVariavelY] = useState();
+    const [legenda, setLegenda] = useState();
+    const [checked, setChecked] = useState("Valor Total R$");
 
-  const handleChange = (event) => {
-    setChecked(event.target.value);
-  };
-
-  const dataConsumo = listaRelatorioAguas.map((x) => {
-    const arrayData = x.data_emissao.split("-");
-    const ano = `${arrayData[0]}`;
-    const mes = `${arrayData[1]}`;
-    return {
-      name: `${mes}/${ano}`,
-      uv: x.consumo_m3,
+    const handleChange = (event) => {
+      setChecked(event.target.value);
     };
-  });
 
-  const daTaValorTotal = listaRelatorioAguas.map((x) => {
-    const arrayData = x.data_emissao.split("-");
-    const ano = `${arrayData[0]}`;
-    const mes = `${arrayData[1]}`;
-    return {
-      name: `${mes}/${ano}`,
-      uv: x.valor_total,
-    };
-  });
+    const dataConsumo = listaRelatorioAguas.map((x) => {
+      const arrayData = x.data_emissao.split("-");
+      const ano = `${arrayData[0]}`;
+      const mes = `${arrayData[1]}`;
+      return {
+        name: `${mes}/${ano}`,
+        uv: x.consumo_m3,
+      };
+    });
 
-  return (
-    <div className="main-dados">
-      <div className="Agua">
-        <AreaChart
-          width={900}
-          height={450}
-          data={variavelY ? variavelY : daTaValorTotal}
-          margin={{ top: 30, right: 20, left: 0, bottom: 0 }}
-        >
-          <defs>
-            <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="2">
-              <stop offset="5%" stopColor="#5664D2" stopOpacity={0.8} />
-              <stop offset="95%" stopColor="#5664D2" stopOpacity={0} />
-            </linearGradient>
-          </defs>
-          <XAxis dataKey="name" />
-          <YAxis />
-          <CartesianGrid strokeDasharray="3 3" />
-          <Tooltip />
-          <Area
-            type="monotone"
-            name={legenda ? legenda : "Valor Total (R$)"}
-            dataKey="uv"
-            stroke="#5664D2"
-            fillOpacity={1}
-            fill="url(#colorUv)"
-          />
-        </AreaChart>
-      </div>
-      <div className="buttons">
-        <FormControl component="fieldset">
-          <RadioGroup row value={checked} onChange={handleChange}>
-            <FormControlLabel
-              value="Valor Total R$"
-              control={<Radio />}
-              label="Valor Total R$"
-              onClick={() => {
-                setVariavelY(daTaValorTotal);
-                setLegenda("Valor Total (R$)");
-              }}
+    const daTaValorTotal = listaRelatorioAguas.map((x) => {
+      const arrayData = x.data_emissao.split("-");
+      const ano = `${arrayData[0]}`;
+      const mes = `${arrayData[1]}`;
+      return {
+        name: `${mes}/${ano}`,
+        uv: x.valor_total,
+      };
+    });
+
+    return (
+      <div className="main-dados">
+        <div className="Agua">
+          <AreaChart
+            width={900}
+            height={450}
+            data={variavelY ? variavelY : daTaValorTotal}
+            margin={{ top: 30, right: 20, left: 0, bottom: 0 }}
+          >
+            <defs>
+              <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="2">
+                <stop offset="5%" stopColor="#5664D2" stopOpacity={0.8} />
+                <stop offset="95%" stopColor="#5664D2" stopOpacity={0} />
+              </linearGradient>
+            </defs>
+            <XAxis dataKey="name" />
+            <YAxis />
+            <CartesianGrid strokeDasharray="3 3" />
+            <Tooltip />
+            <Area
+              type="monotone"
+              name={legenda ? legenda : "Valor Total (R$)"}
+              dataKey="uv"
+              stroke="#5664D2"
+              fillOpacity={1}
+              fill="url(#colorUv)"
             />
-            <FormControlLabel
-              value="Consumo Mês (M³)"
-              control={<Radio />}
-              label="Consumo Mês (M³)"
-              onClick={() => {
-                setVariavelY(dataConsumo);
-                setLegenda("Consumo Mês (M³)");
-              }}
-            />
-          </RadioGroup>
-        </FormControl>
+          </AreaChart>
+        </div>
+        <div className="buttons">
+          <FormControl component="fieldset">
+            <RadioGroup row value={checked} onChange={handleChange}>
+              <FormControlLabel
+                value="Valor Total R$"
+                control={<Radio />}
+                label="Valor Total R$"
+                onClick={() => {
+                  setVariavelY(daTaValorTotal);
+                  setLegenda("Valor Total (R$)");
+                }}
+              />
+              <FormControlLabel
+                value="Consumo Mês (M³)"
+                control={<Radio />}
+                label="Consumo Mês (M³)"
+                onClick={() => {
+                  setVariavelY(dataConsumo);
+                  setLegenda("Consumo Mês (M³)");
+                }}
+              />
+            </RadioGroup>
+          </FormControl>
+        </div>
       </div>
-    </div>
-  );
-}
+    );
+  }
 
-export default GraficoAgua;
-  ```
+  export default GraficoAgua;
+    ```
+</details>
 O código acima monta o gráfico através dos dados recebidos no JSON do back-end e filtra de acordo com os valor total mensal e consumo mensal.
 
 Abaixo um gif de como ficou a montagem desse gráfico e os filtros.
