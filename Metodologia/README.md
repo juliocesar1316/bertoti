@@ -109,9 +109,9 @@ Tenho 25 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
 
   ### Tecnologias adotadas na solução
 
-  #### React
-  #### Spring - java
-  #### MySQL
+  #### - React
+  #### - Spring - java
+  #### - MySQL
 
   ### Contribuições pessoais
 
@@ -397,6 +397,14 @@ Porém nesta api eu estava como product owner porém dois integrantes que ficara
   Utilizado para liderar o grupo da melhor forma possível de acordo com os critérios e gosto do cliente e como desenvolvedor liderar o front-end para que fique adequado e o cliente fique satisfeito <br>
 
 ### Aprendizados Efetivos HS
+
+Neste projeto foi possível aprender bastantes coisas tanto de hard skills quanto de soft skills, apesar de todos os transtornos e problemas.
+
+Foi o primeiro projeto que pude trabalhar como product owner, a princípio foi uma grande luta pois nas primeiras sprints que é feito a montagem do user storys, o mockup e validar tudo com o cliente, antes de começar de fato a produção do projeto. Meu grupo ajudou bastante nessa hora com ideias e complementos, professores também ajudaram bastantes pois tinha vezes que a gente não entendia muito bem como fazer um bom planejamento e montagem para mostrar para o cliente.
+
+tudo deu certo como planejamos, o cliente aprovou nosso mockup e user stories e assim podemos começar a programar, porém tivemos problemas com alguns integrantes que não ajudaram e atrasaram entregas, então optei por ficar responsável pelo front-end, onde aprendi a liderar, organizar e realizar coding dojo para conseguir ajudar essas pessoas e assim criar um bom produto para o cliente. 
+
+Mas tudo deu certo no final, aprendi bastante a mexer no figma, a identificar a dor do cliente, qual seria a causa e a solução do problema, liderar um grupo do front-end, programar em react junto com back-end Java, fazer a junção das duas partes, para que o sistema fique completo e a como relacionar o cliente quando algo planejado acaba não dando certo. Foi de grande aprendizado essa api e acredito que a que mais tive resultados satisfatórios. 
 
 </details>
 
