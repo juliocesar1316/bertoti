@@ -88,7 +88,7 @@ Tenho 25 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
 
   ### Aprendizados Efetivos HS
 
-</details>
+</details> 
 
 <details>
   <summary>Projeto 3: 1º semestre de 2022</summary>
@@ -98,7 +98,7 @@ Tenho 25 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
   ## Parceiro Acadêmico
   tecsus <br/>
   ![image](https://media-exp1.licdn.com/dms/image/C560BAQHXLirwDSFr8w/company-logo_200_200/0/1601400075343?e=1671667200&v=beta&t=YrZM8vA81NGXAkaDahqHBGJqxY0gAzFTM6xDqingDkM)
-  ##### *Figura 02. tecsus*
+  ##### *Figura 01. tecsus*
 
   ### Visão do Projeto
 
@@ -180,12 +180,12 @@ Tenho 25 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
   </div>
 
   <img src="./midias/contrato_agua.png" width="800">
-  <br>  # Figura 03. Tela de contrato de agua*
+  <br>  # Figura 02. Tela de contrato de agua*
   <img src="./midias/pt1_conta_agua.png" width="800">
-  <br> # Figura 04. Tela de conta de agua pt1*
+  <br> # Figura 03. Tela de conta de agua pt1*
   <img src="./midias/pt2_conta_agua.png" width="800">
   <br>
-  # Figura 05. Tela de conta de agua pt2*
+  # Figura 04. Tela de conta de agua pt2*
   <br>
   <br>
   Após cliente aprovar o mockup e a priorização de backlog, podemos começar a organizar os grupos de back-end e front-end. Para este projeto foi utilizado as linguagens React para front-end, Spring Boot para back-end e para o banco de dados foi utilizado o Mysql. As linguagens foram utilizadas por serem requisitos e pela preferência do grupo.
@@ -194,66 +194,68 @@ Tenho 25 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
 
   De começo para auxiliar na programação das telas foi utilizado a biblioteca MaterialUi onde foi utilizado campos de input, botões e estilos. Como o react trabalha com componentes no nosso projeto não foi diferente, para cada parte das páginas foi criado um componente para facilitar na programação e userStates para que seja feito o controle do estado das variáveis.
   <details>
-  ```
-  export default function EditConcessionaria({ dados, modalEdit }) {
-  
-    const classes = useStyles();
-    const [cnpj, setCnpj] = useState(dados.cnpj);
-    const [nome, setNome] = useState(dados.nome);
-    const [segmento, setSegmento] = useState(dados.segmento);
-    const [cep, setCep] = useState(dados.cep);
-    const [rua, setRua] = useState(dados.rua);
-    const [bairro, setBairro] = useState(dados.bairro);
-    const [estado, setEstado] = useState(dados.uf);
-    const [cidade, setCidade] = useState(dados.cidade);
-    const [num_resid, setNum_resid] = useState(dados.numero);
-    const [telefone, setTelefone] = useState(dados.telefone);
-    const [inscricao_est, setInscricao_est] = useState(dados.inscricao_estadual);
-    const [inscricao_unic, setInscricao_unic] = useState(
-      dados.inscricao_especial
-    );
+    <summary>Modal de editar a concessionaria</summary><br>
+    ```
+      
+      export default function EditConcessionaria({ dados, modalEdit }) {
+    
+      const classes = useStyles();
+      const [cnpj, setCnpj] = useState(dados.cnpj);
+      const [nome, setNome] = useState(dados.nome);
+      const [segmento, setSegmento] = useState(dados.segmento);
+      const [cep, setCep] = useState(dados.cep);
+      const [rua, setRua] = useState(dados.rua);
+      const [bairro, setBairro] = useState(dados.bairro);
+      const [estado, setEstado] = useState(dados.uf);
+      const [cidade, setCidade] = useState(dados.cidade);
+      const [num_resid, setNum_resid] = useState(dados.numero);
+      const [telefone, setTelefone] = useState(dados.telefone);
+      const [inscricao_est, setInscricao_est] = useState(dados.inscricao_estadual);
+      const [inscricao_unic, setInscricao_unic] = useState(
+        dados.inscricao_especial
+      );
 
-    async function handleUpdate() {
-      const data = {
-        id: dados.id,
-        cnpj: cnpj,
-        nome: nome,
-        segmento: segmento,
-        cep: cep,
-        rua: rua,
-        bairro: bairro,
-        cidade: cidade,
-        uf: estado,
-        numero: num_resid,
-        telefone: telefone,
-        inscricao_estadual: inscricao_est,
-        inscricao_especial: inscricao_unic,
-      };
-      await fetch(`${baseURL}/concessionaria/atualizar`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
-    }
+      async function handleUpdate() {
+        const data = {
+          id: dados.id,
+          cnpj: cnpj,
+          nome: nome,
+          segmento: segmento,
+          cep: cep,
+          rua: rua,
+          bairro: bairro,
+          cidade: cidade,
+          uf: estado,
+          numero: num_resid,
+          telefone: telefone,
+          inscricao_estadual: inscricao_est,
+          inscricao_especial: inscricao_unic,
+        };
+        await fetch(`${baseURL}/concessionaria/atualizar`, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+      }
 
-    return (
-      <form className={classes.root} onSubmit={handleUpdate}>
-        <div className={classes.campo}>
-          <TextField
-            className={classes.text}
-            required
-            id="outlined-required"
-            label="CNPJ"
-            variant="outlined"
-            fullWidth
-            onChange={(e) => setCnpj(e.target.value)}
-            value={cnpj}
-          />
-    ...
-  ```
-  </details>
+      return (
+        <form className={classes.root} onSubmit={handleUpdate}>
+          <div className={classes.campo}>
+            <TextField
+              className={classes.text}
+              required
+              id="outlined-required"
+              label="CNPJ"
+              variant="outlined"
+              fullWidth
+              onChange={(e) => setCnpj(e.target.value)}
+              value={cnpj}
+            />
+      ...
+    ```
+  </details><br>
 
   O componente que foi criado acima é um Modal que aonde retorna os dados que foram salvos e edita as informações. Usando o useState é possível guardar o dado salvo e editá-lo como segundo estado da variável. A função handleUpdate é executado após apertar o botão de enviar onde ele pega todas as alterações e atualiza os dados. No returno desse componente tem os inputs e as label que serão mostradas nesse modal.
 
@@ -264,115 +266,118 @@ Tenho 25 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
   Para o gráfico optei por utilizar a biblioteca recharts para react onde ele consegue gerar um gráfico com os dados das contas.
 
   <details>
+    <summary>Componente de grafico da agua usado na pagina de relatorios</summary>
     ```
-    import {
-    AreaChart,
-    XAxis,
-    YAxis,
-    CartesianGrid,
-    Tooltip,
-    Area,
-  } from "recharts";
-  import FormControl from "@material-ui/core/FormControl";
-  import RadioGroup from "@material-ui/core/RadioGroup";
-  import FormControlLabel from "@material-ui/core/FormControlLabel";
-  import { useState } from "react";
-  import Radio from "@material-ui/core/Radio";
-  import "./style.css";
 
-  function GraficoAgua({ listaRelatorioAguas }) {
-    const [variavelY, setVariavelY] = useState();
-    const [legenda, setLegenda] = useState();
-    const [checked, setChecked] = useState("Valor Total R$");
 
-    const handleChange = (event) => {
-      setChecked(event.target.value);
-    };
+      import {
+      AreaChart,
+      XAxis,
+      YAxis,
+      CartesianGrid,
+      Tooltip,
+      Area,
+    } from "recharts";
+    import FormControl from "@material-ui/core/FormControl";
+    import RadioGroup from "@material-ui/core/RadioGroup";
+    import FormControlLabel from "@material-ui/core/FormControlLabel";
+    import { useState } from "react";
+    import Radio from "@material-ui/core/Radio";
+    import "./style.css";
 
-    const dataConsumo = listaRelatorioAguas.map((x) => {
-      const arrayData = x.data_emissao.split("-");
-      const ano = `${arrayData[0]}`;
-      const mes = `${arrayData[1]}`;
-      return {
-        name: `${mes}/${ano}`,
-        uv: x.consumo_m3,
+    function GraficoAgua({ listaRelatorioAguas }) {
+      const [variavelY, setVariavelY] = useState();
+      const [legenda, setLegenda] = useState();
+      const [checked, setChecked] = useState("Valor Total R$");
+
+      const handleChange = (event) => {
+        setChecked(event.target.value);
       };
-    });
 
-    const daTaValorTotal = listaRelatorioAguas.map((x) => {
-      const arrayData = x.data_emissao.split("-");
-      const ano = `${arrayData[0]}`;
-      const mes = `${arrayData[1]}`;
-      return {
-        name: `${mes}/${ano}`,
-        uv: x.valor_total,
-      };
-    });
+      const dataConsumo = listaRelatorioAguas.map((x) => {
+        const arrayData = x.data_emissao.split("-");
+        const ano = `${arrayData[0]}`;
+        const mes = `${arrayData[1]}`;
+        return {
+          name: `${mes}/${ano}`,
+          uv: x.consumo_m3,
+        };
+      });
 
-    return (
-      <div className="main-dados">
-        <div className="Agua">
-          <AreaChart
-            width={900}
-            height={450}
-            data={variavelY ? variavelY : daTaValorTotal}
-            margin={{ top: 30, right: 20, left: 0, bottom: 0 }}
-          >
-            <defs>
-              <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="2">
-                <stop offset="5%" stopColor="#5664D2" stopOpacity={0.8} />
-                <stop offset="95%" stopColor="#5664D2" stopOpacity={0} />
-              </linearGradient>
-            </defs>
-            <XAxis dataKey="name" />
-            <YAxis />
-            <CartesianGrid strokeDasharray="3 3" />
-            <Tooltip />
-            <Area
-              type="monotone"
-              name={legenda ? legenda : "Valor Total (R$)"}
-              dataKey="uv"
-              stroke="#5664D2"
-              fillOpacity={1}
-              fill="url(#colorUv)"
-            />
-          </AreaChart>
-        </div>
-        <div className="buttons">
-          <FormControl component="fieldset">
-            <RadioGroup row value={checked} onChange={handleChange}>
-              <FormControlLabel
-                value="Valor Total R$"
-                control={<Radio />}
-                label="Valor Total R$"
-                onClick={() => {
-                  setVariavelY(daTaValorTotal);
-                  setLegenda("Valor Total (R$)");
-                }}
+      const daTaValorTotal = listaRelatorioAguas.map((x) => {
+        const arrayData = x.data_emissao.split("-");
+        const ano = `${arrayData[0]}`;
+        const mes = `${arrayData[1]}`;
+        return {
+          name: `${mes}/${ano}`,
+          uv: x.valor_total,
+        };
+      });
+
+      return (
+        <div className="main-dados">
+          <div className="Agua">
+            <AreaChart
+              width={900}
+              height={450}
+              data={variavelY ? variavelY : daTaValorTotal}
+              margin={{ top: 30, right: 20, left: 0, bottom: 0 }}
+            >
+              <defs>
+                <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="2">
+                  <stop offset="5%" stopColor="#5664D2" stopOpacity={0.8} />
+                  <stop offset="95%" stopColor="#5664D2" stopOpacity={0} />
+                </linearGradient>
+              </defs>
+              <XAxis dataKey="name" />
+              <YAxis />
+              <CartesianGrid strokeDasharray="3 3" />
+              <Tooltip />
+              <Area
+                type="monotone"
+                name={legenda ? legenda : "Valor Total (R$)"}
+                dataKey="uv"
+                stroke="#5664D2"
+                fillOpacity={1}
+                fill="url(#colorUv)"
               />
-              <FormControlLabel
-                value="Consumo Mês (M³)"
-                control={<Radio />}
-                label="Consumo Mês (M³)"
-                onClick={() => {
-                  setVariavelY(dataConsumo);
-                  setLegenda("Consumo Mês (M³)");
-                }}
-              />
-            </RadioGroup>
-          </FormControl>
+            </AreaChart>
+          </div>
+          <div className="buttons">
+            <FormControl component="fieldset">
+              <RadioGroup row value={checked} onChange={handleChange}>
+                <FormControlLabel
+                  value="Valor Total R$"
+                  control={<Radio />}
+                  label="Valor Total R$"
+                  onClick={() => {
+                    setVariavelY(daTaValorTotal);
+                    setLegenda("Valor Total (R$)");
+                  }}
+                />
+                <FormControlLabel
+                  value="Consumo Mês (M³)"
+                  control={<Radio />}
+                  label="Consumo Mês (M³)"
+                  onClick={() => {
+                    setVariavelY(dataConsumo);
+                    setLegenda("Consumo Mês (M³)");
+                  }}
+                />
+              </RadioGroup>
+            </FormControl>
+          </div>
         </div>
-      </div>
-    );
-  }
+      );
+    }
 
-  export default GraficoAgua;
-    ```
-</details>
+    export default GraficoAgua;
+      ```
+</details><br>
 O código acima monta o gráfico através dos dados recebidos no JSON do back-end e filtra de acordo com os valor total mensal e consumo mensal.
 
 Abaixo um gif de como ficou a montagem desse gráfico e os filtros.
-<img align="center"  src = "midias/relatorios_e_graficos.gif"/>
+<br><img align="center"  src = "midias/relatorios_e_graficos.gif"/>
 
 E com isso é finalizado a api, colocamos o back-end no heroku para facilitar na requisição de dados do front-end e conseguimos entregar um bom projeto, o cliente ficou satisfeito com o resultado.
 
