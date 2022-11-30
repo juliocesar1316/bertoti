@@ -89,11 +89,9 @@ Tenho 25 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
   ### Aprendizados Efetivos HS
 
 </details> 
+<br>
 
-<details>
-  <summary>Projeto 3: 1º semestre de 2022</summary>
-
-  # Projeto 3: 1º semestre de 2022
+# Projeto 3: 1º semestre de 2022
 
   ## Parceiro Acadêmico
   tecsus <br/>
@@ -421,8 +419,6 @@ Foi o primeiro projeto que pude trabalhar como product owner, a princípio foi u
 tudo deu certo como planejamos, o cliente aprovou nosso mockup e user stories e assim podemos começar a programar, porém tivemos problemas com alguns integrantes que não ajudaram e atrasaram entregas, então optei por ficar responsável pelo front-end, onde aprendi a liderar, organizar e realizar coding dojo para conseguir ajudar essas pessoas e assim criar um bom produto para o cliente. 
 
 Mas tudo deu certo no final, aprendi bastante a mexer no figma, a identificar a dor do cliente, qual seria a causa e a solução do problema, liderar um grupo do front-end, programar em react junto com back-end Java, fazer a junção das duas partes, para que o sistema fique completo e a como relacionar o cliente quando algo planejado acaba não dando certo. Foi de grande aprendizado essa api e acredito que a que mais tive resultados satisfatórios. 
-
-</details>
 
 ## Contatos:
 
