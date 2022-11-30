@@ -118,75 +118,80 @@ Tenho 25 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
   Neste projeto eu estava atuando como Product Owner, onde era responsável pelo contato com cliente, definição de user storys, priorização do backlog e para este projeto eu realizei o design do mockup do aplicativo. 
 
   Após o contato com o cliente, foi possível a definição dos user storys e do mockup onde foi utilizado a ferramenta figma.
-  <div id="table_use_cases" align="center" width="400">
-    <table align="justify">
-      <tr>
-        <th>User Story id</th>
-        <th>Como um (ator)</th>
-        <th>Eu quero (ação)</th>
-        <th>Para que seja possível (funcionalidade)</th>
-        <th>Prioridade</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Digitador</td>
-        <td>Guardar no sistema os dados das contas de água para análises, relatórios e ter um controle de sistema</td>
-        <td>Criar um cadastro de conta de água de maneira funcional e prático </td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Digitador</td>
-        <td>Guardar no sistema os dados das contas de energia para análises, relatórios e ter um controle de sistema</td>
-        <td>Criar um cadastro de conta de energia de maneira funcional e prático </td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Digitador</td>
-        <td>Guardar no sistema dados de unidades e ou empresas para análises, relatórios e ter um controle de sistema</td>
-        <td>Criar um cadastro de unidades de maneira funcional e prático </td>
-        <td>3</td>
-      </tr>
-      <tr> 
-        <td>4</td>
-        <td>Digitador</td>
-        <td>Guardar no sistema dados de concessionaria que faz o fornecimento para tais unidades para análises, relatórios e ter um controle de sistema</td>
-        <td>Criar um cadastro de concessionarias de maneira funcional e prático </td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Digitador</td>
-        <td>Cadastrar os contratos acordado com os clientes e unidade com sua respectiva concessionaria do segmento de água/esgoto</td>
-        <td>Criar um cadastro de contrato para contas de água/esgoto</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Digitador</td>
-        <td>Cadastrar os contratos acordado com os clientes e unidade com sua respectiva concessionaria do segmento de energia</td>
-        <td>Criar um cadastro de contrato para contas de energia</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>23</td>
-        <td>Gestor, Digitador e Administrador</td>
-        <td>Um sistema com bastante atalhos, que fique bem usual para os usuários e de fácil entendimento</td>
-        <td>O sistema deve ser montado com menu lateral esquerdo com as abas de acesso totalmente limpo e de fácil acesso e para áreas externas do menu vão ser utilizados mais ou menos 100% da tela</td>
-        <td>23</td>
-      </tr>
-    </table>
-  </div>
-
-  <img src="./midias/contrato_agua.png" width="800">
-  <br>  # Figura 02. Tela de contrato de agua*
-  <img src="./midias/pt1_conta_agua.png" width="800">
-  <br> # Figura 03. Tela de conta de agua pt1*
-  <img src="./midias/pt2_conta_agua.png" width="800">
-  <br>
-  # Figura 04. Tela de conta de agua pt2*
-  <br>
+  <details>
+  <summary>User Story</summary>
+    <div id="table_use_cases" align="center" width="400">
+      <table align="justify">
+        <tr>
+          <th>User Story id</th>
+          <th>Como um (ator)</th>
+          <th>Eu quero (ação)</th>
+          <th>Para que seja possível (funcionalidade)</th>
+          <th>Prioridade</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Digitador</td>
+          <td>Guardar no sistema os dados das contas de água para análises, relatórios e ter um controle de sistema</td>
+          <td>Criar um cadastro de conta de água de maneira funcional e prático </td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Digitador</td>
+          <td>Guardar no sistema os dados das contas de energia para análises, relatórios e ter um controle de sistema</td>
+          <td>Criar um cadastro de conta de energia de maneira funcional e prático </td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Digitador</td>
+          <td>Guardar no sistema dados de unidades e ou empresas para análises, relatórios e ter um controle de sistema</td>
+          <td>Criar um cadastro de unidades de maneira funcional e prático </td>
+          <td>3</td>
+        </tr>
+        <tr> 
+          <td>4</td>
+          <td>Digitador</td>
+          <td>Guardar no sistema dados de concessionaria que faz o fornecimento para tais unidades para análises, relatórios e ter um controle de sistema</td>
+          <td>Criar um cadastro de concessionarias de maneira funcional e prático </td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Digitador</td>
+          <td>Cadastrar os contratos acordado com os clientes e unidade com sua respectiva concessionaria do segmento de água/esgoto</td>
+          <td>Criar um cadastro de contrato para contas de água/esgoto</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Digitador</td>
+          <td>Cadastrar os contratos acordado com os clientes e unidade com sua respectiva concessionaria do segmento de energia</td>
+          <td>Criar um cadastro de contrato para contas de energia</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td>Gestor, Digitador e Administrador</td>
+          <td>Um sistema com bastante atalhos, que fique bem usual para os usuários e de fácil entendimento</td>
+          <td>O sistema deve ser montado com menu lateral esquerdo com as abas de acesso totalmente limpo e de fácil acesso e para áreas externas do menu vão ser utilizados mais ou menos 100% da tela</td>
+          <td>23</td>
+        </tr>
+      </table>
+    </div>
+  </details>
+  <details>
+    <summary>Mockup do projeto</summary>
+    <img src="./midias/contrato_agua.png" width="800">
+    <br>  # Figura 02. Tela de contrato de agua*
+    <img src="./midias/pt1_conta_agua.png" width="800">
+    <br> # Figura 03. Tela de conta de agua pt1*
+    <img src="./midias/pt2_conta_agua.png" width="800">
+    <br>
+    # Figura 04. Tela de conta de agua pt2*
+    <br>
+  </details>  
   <br>
   Após cliente aprovar o mockup e a priorização de backlog, podemos começar a organizar os grupos de back-end e front-end. Para este projeto foi utilizado as linguagens React para front-end, Spring Boot para back-end e para o banco de dados foi utilizado o Mysql. As linguagens foram utilizadas por serem requisitos e pela preferência do grupo.
 
@@ -376,8 +381,11 @@ Tenho 25 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
 </details><br>
 O código acima monta o gráfico através dos dados recebidos no JSON do back-end e filtra de acordo com os valor total mensal e consumo mensal.
 
-Abaixo um gif de como ficou a montagem desse gráfico e os filtros.
-<br><img align="center"  src = "midias/relatorios_e_graficos.gif"/>
+<details>
+  <summary>Gif do grafico e filtros</summary>
+  <br><img align="center"  src = "midias/relatorios_e_graficos.gif"/>
+</details>
+
 
 E com isso é finalizado a api, colocamos o back-end no heroku para facilitar na requisição de dados do front-end e conseguimos entregar um bom projeto, o cliente ficou satisfeito com o resultado.
 
