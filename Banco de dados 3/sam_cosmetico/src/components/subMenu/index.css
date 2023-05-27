@@ -1,0 +1,14 @@
+.subMenu{
+    display: flex;
+    justify-content:center;
+    gap: 5%;
+    margin-bottom: 2%;
+}
+.subMenu button{
+    padding: 5px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+
+}

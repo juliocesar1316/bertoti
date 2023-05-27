@@ -1,0 +1,21 @@
+.header a{
+    text-decoration: none;
+    color: #000;
+}
+.linksHeader{
+    display: flex;
+    flex-direction: row;
+
+    gap: 5%;
+    padding: 0.5% 2%;
+}
+.header{
+    background-color:#D4E5E5 ;
+    height: 5vh;
+}
+
+.btn_header{
+    display: flex;
+    gap: 5%;
+    flex-grow: 1;
+}

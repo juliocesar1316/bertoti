@@ -1,0 +1,19 @@
+
+.bodyEdicao{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.quadroProduto{
+    padding: 20px 50px;
+}
+.quadroMarca{
+    padding: 20px 50px;
+}
+.quadroCategoria{
+    padding: 20px 50px;
+}
+.tituloPage{
+    margin: 20px 0;
+}

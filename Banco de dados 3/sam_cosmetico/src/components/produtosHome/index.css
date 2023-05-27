@@ -1,0 +1,47 @@
+
+.bodyProduto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.filtro{
+    padding: 20px;
+}
+.filtroo{
+    margin-left: 10%;
+}
+.marca,.categoria{
+    padding: 15px;
+}
+.produtos{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-grow: 1;
+ 
+}
+.modal{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    bottom: -20%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.445);
+    z-index: 1;
+}
+
+.btn-modal{
+    display: flex;
+    position: absolute;
+    margin: 30px;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.btn_filtro{
+    text-align: center;
+    margin-bottom: 15px;
+    color: #000;
+}

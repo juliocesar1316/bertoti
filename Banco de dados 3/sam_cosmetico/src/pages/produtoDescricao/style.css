@@ -1,0 +1,40 @@
+.containerDescritivo{
+    display: flex;
+    background: #fff;
+    min-height: 100vh;
+}
+
+.cardProduto{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("../../assets/fundo.avif") ;
+    padding: 100px;
+}
+/* .fotoDescritivo{
+    box-shadow: 5px 5px 10px ;
+} */
+.dadosDescritivo{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5% 1%;
+    gap: 30px;
+    width: 32%;
+}
+.tituloCard{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.codigoProduto{
+    display: flex;
+    gap: 10px;
+    margin-top: -10px;
+}
+.btnDescritivo{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}

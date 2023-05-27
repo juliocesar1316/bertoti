@@ -1,0 +1,71 @@
+.containerCarrinho{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(250,250,250);
+    min-height: 100vh;
+}
+
+.bodyCarrinho{
+    display: flex;
+    padding: 2%;
+    gap: 25px;
+
+    padding-bottom: 50px;
+}
+.sacola{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #fff;
+    text-align: center;
+    gap: 10px;
+
+    padding: 2%;
+}
+.prod{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+.frete{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.cadastroEntrega{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 5%;
+    width: 20vw;
+    gap: 5px;
+    
+}
+
+.valorCarrinho{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+    margin-top: 30px;
+    padding: 5%;
+}
+
+.valorCompra{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+
+    margin-bottom: 10px;
+}
+.vertical{
+    border: 1px solid #0000001a;
+    margin: 20px 0;
+}
