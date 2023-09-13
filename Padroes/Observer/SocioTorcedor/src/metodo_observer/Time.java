@@ -8,9 +8,9 @@ public class Time implements Observable {
     private List<Observer> observers = new ArrayList<>();
     private String nomeTime;
 
-    // public Time(String nomeTime){
-    //     this.nomeTime = nomeTime;
-    // }
+    public Time(String nomeTime){
+        this.nomeTime = nomeTime;
+    }
 
     public void setNomeTime(String nomeTime){
         this.nomeTime = nomeTime;
@@ -30,7 +30,7 @@ public class Time implements Observable {
    @Override
    public void notifyObservers(){
         for(Observer ob : observers){
-            System.out.println("Notificando observers sobre o time");
+            System.out.println("Notificando observers sobre o jogo do " + nomeTime);
             ob.update(this.nomeTime);
         }
    }

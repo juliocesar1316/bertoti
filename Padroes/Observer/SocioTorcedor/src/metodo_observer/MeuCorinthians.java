@@ -1,6 +1,6 @@
 package metodo_observer;
 
-public class MeuTime implements Observer {
+public class MeuCorinthians implements Observer {
 
     @Override
     public void update(String novoTime){
