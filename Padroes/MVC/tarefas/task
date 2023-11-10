@@ -1,0 +1,167 @@
+// Task.java (Model)
+import java.util.Date;
+
+public class Task {
+    private String name;
+    private int priority;
+    private Date dueDate;
+    private Category category;
+
+    // Construtores, getters e setters
+}
+
+// Category.java (Composite)
+import java.util.ArrayList;
+import java.util.List;
+
+public class Category {
+    private String name;
+    private List<Task> tasks = new ArrayList<>();
+
+    // Construtores, getters e setters
+    public void addTask(Task task) {
+        tasks.add(task);
+    }
+}
+
+// TaskObserver.java (Observer)
+public interface TaskObserver {
+    void update();
+}
+
+
+// TaskView.java (View)
+import java.util.List;
+
+public class TaskView {
+    public void displayTasks(List<Task> tasks) {
+        // Exibir tarefas na interface do usuário
+        if (tasks.isEmpty()) {
+            System.out.println("Nenhuma tarefa disponível.");
+        } else {
+            System.out.println("Lista de tarefas:");
+            for (Task task : tasks) {
+                System.out.println("Nome: " + task.getName());
+                System.out.println("Prioridade: " + task.getPriority());
+                System.out.println("Data de vencimento: " + task.getDueDate());
+                System.out.println("Categoria: " + (task.getCategory() != null ? task.getCategory().getName() : "Sem categoria"));
+                System.out.println("------------------------------");
+            }
+        }
+    }
+}
+
+// TaskController.java (Controller)
+import java.util.List;
+
+public class TaskController {
+    private List<Task> tasks;
+    private TaskView view;
+    private List<TaskObserver> observers = new ArrayList<>();
+    private SortStrategy sortStrategy;
+
+    public TaskController(List<Task> tasks, TaskView view) {
+        this.tasks = tasks;
+        this.view = view;
+    }
+
+    public void addTask(Task task) {
+        tasks.add(task);
+        notifyObservers(); // Notificar observadores sobre a adição de tarefa
+    }
+
+    public void removeTask(Task task) {
+        tasks.remove(task);
+        notifyObservers(); // Notificar observadores sobre a remoção de tarefa
+    }
+
+    public void updateView() {
+        if (sortStrategy != null) {
+            sortStrategy.sort(tasks); // Aplicar estratégia (Strategy) de ordenação
+        }
+        view.displayTasks(tasks); // Atualizar a visualização com as tarefas atuais
+    }
+
+    public void addObserver(TaskObserver observer) {
+        observers.add(observer);
+    }
+
+    public void setSortStrategy(SortStrategy strategy) {
+        this.sortStrategy = strategy;
+    }
+
+    private void notifyObservers() {
+        for (TaskObserver observer : observers) {
+            observer.update();
+        }
+    }
+}
+
+// SortStrategy.java (Strategy)
+import java.util.List;
+
+public interface SortStrategy {
+    void sort(List<Task> tasks);
+}
+
+// PrioritySortStrategy.java (Strategy)
+public class PrioritySortStrategy implements SortStrategy {
+    @Override
+    public void sort(List<Task> tasks) {
+        // Implementação da ordenação por prioridade
+        Collections.sort(tasks, (task1, task2) -> {
+            if (task1.getPriority() < task2.getPriority()) {
+                return -1;
+            } else if (task1.getPriority() > task2.getPriority()) {
+                return 1;
+            } else {
+                return 0;
+            }
+        });
+    }
+}
+
+// DateSortStrategy.java (Strategy)
+public class DateSortStrategy implements SortStrategy {
+    @Override
+    public void sort(List<Task> tasks) {
+        // Implementação da ordenação por data de vencimento
+        Collections.sort(tasks, new DateComparator());
+    }
+
+    private class DateComparator implements Comparator<Task> {
+        @Override
+        public int compare(Task task1, Task task2) {
+            return task1.getDueDate().compareTo(task2.getDueDate());
+        }
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        // Criar uma instância da View, Controller e aplicar estratégia de ordenação
+        TaskView view = new TaskView();
+        TaskController controller = new TaskController(view);
+        controller.setSortStrategy(new PrioritySortStrategy());
+
+        // Criar algumas tarefas
+        Task task1 = new Task("Tarefa 1", 2, new Date(), null);
+        Task task2 = new Task("Tarefa 2", 1, new Date(), null);
+        Task task3 = new Task("Tarefa 3", 3, new Date(), null);
+
+        // Adicionar tarefas
+        controller.addTask(task1);
+        controller.addTask(task2);
+        controller.addTask(task3);
+
+        // Atualizar a visão para exibir tarefas ordenadas por prioridade
+        controller.updateView();
+
+        // Remover uma tarefa
+        controller.removeTask(task2);
+
+        // Atualizar a visão novamente
+        controller.updateView();
+    }
+}

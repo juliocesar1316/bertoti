@@ -1,4 +1,4 @@
-## Padrões de Projeto: Estratégia
+## Padrões de Projeto: Composite
 
 #### Diagrama do exemplo
 Abaixo o diagrama do padrão proposto:
