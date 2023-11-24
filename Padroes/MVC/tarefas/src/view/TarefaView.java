@@ -4,7 +4,8 @@ import java.util.List;
 
 import model.Tarefa;
 
-public class TarefaView {
+public class TarefaView implements TarefaObserver {
+    
     public void exibirTarefas(List<Tarefa> tarefas){
         if(tarefas.isEmpty()){
             System.out.println("Nenhuma tarefa disponivel!");
@@ -19,4 +20,10 @@ public class TarefaView {
             }
         }
     }
+
+    @Override
+    public void update() {
+        System.out.println("Atualizando a visualização da TarefaView...");
+    }
+
 }

@@ -11,12 +11,14 @@ import view.ordenacao.OrdenacaoTarefa;
 public class TarefaController {
     private List<Tarefa> tarefas;
     private TarefaView view;
-    private List<TarefaObserver> observers = new ArrayList<>();
+    private List<TarefaObserver> observers;
     private OrdenacaoTarefa ordenacaoTarefas;
 
     public TarefaController(List<Tarefa> tarefas, TarefaView view){
         this.tarefas = tarefas;
         this.view = view;
+        this.observers = new ArrayList<>();
+        this.observers.add(view);
     }
 
     public void addTarefa(Tarefa tarefa){
